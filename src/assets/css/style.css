@@ -8,15 +8,32 @@
   font-family: "Inter", sans-serif;
 }
 :root {
-  --first-color: #6a5ae2;
-  --opacity-first: #796ae3;
-  --second-color: #ff8fa3;
-  --opacity-second: #fea5b5;
-  --text-color: #ffffff;
-  --dark-color: #0c0a2b;
-  --light-color: #d2cef6;
-  --bg-color: #e8e5fb;
-  --body-bg: #ffffff;
+  /* Brand / actions */
+  --first-color: #6366f1;
+  --opacity-first: #818cf8;
+
+  /* Secondary accent */
+  --second-color: #0f766e;
+  --opacity-second: #14b8a6;
+
+  /* Text */
+  --text-color: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  /* Backgrounds */
+  --dark-color: #f8fafc;
+  --light-color: #334155;
+  --bg-color: #1e293b;
+  --body-bg: #0b1120;
+
+  /* Feedback */
+  --success-color: #22c55e;
+  --success-bg: rgba(34, 197, 94, 0.10);
+
+  --error-color: #ef4444;
+  --error-bg: rgba(239, 68, 68, 0.10);
+
   --value: attr(data-value);
 }
 .app-container {

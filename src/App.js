@@ -2,6 +2,7 @@ import Home from "./components/Home";
 import Quiz from "./components/Quiz";
 import Result from "./components/Result";
 import Error from "./components/Error";
+import Certifications from "./components/Certifications";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -10,9 +11,11 @@ function App() {
     <div className="app-container">
       <div className="quiz-box">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/quiz/:level" element={<Quiz />} />
+          <Route path="/" element={<Certifications />} />
+          <Route path="/home/:cert" element={<Home />} />
+          <Route path="/quiz/:cert/:level" element={<Quiz />} />
           <Route path="/result" element={<Result />} />
+          <Route path="/error" element={<Error />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
