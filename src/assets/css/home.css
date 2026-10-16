@@ -4,7 +4,7 @@
   grid-template-columns: calc(100% - 70px) 70px;
   gap: 0.5rem;
   align-items: center;
-  background-color: var(--first-color);
+  background-color: #0b1120;
   border-radius: 1rem;
   padding: 1.5rem 2rem;
   overflow: hidden;
@@ -17,18 +17,22 @@
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  border: 7px solid var(--opacity-first);
+
+  border: 7px solid rgba(20, 184, 166, 0.18);
+
   z-index: 0;
 }
 .intro-box::after {
   content: "";
   position: absolute;
-  left: -25px;
+  left: 85%;
   top: -25px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: var(--opacity-first);
+
+  background-color: rgba(20, 184, 166, 0.12);
+
   z-index: 0;
 }
 .intro-texts {
@@ -52,7 +56,7 @@
   display: grid;
   place-items: center;
   border-radius: 0.5rem;
-  background-color: var(--opacity-first);
+  background-color: var(--opacity-second);
   z-index: 9;
 }
 .intro-icon i {
@@ -62,13 +66,23 @@
 .level-boxes {
   margin-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 0.75rem;
+}
+.cert-back-link {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-decoration: none;
 }
 .level-box {
   width: 100%;
   border-radius: 1rem;
-  background-color: var(--second-color);
+  background-color: #1e293b;
+  border: 1px solid #334155;
   padding: 1rem;
   display: flex;
   flex-direction: column;

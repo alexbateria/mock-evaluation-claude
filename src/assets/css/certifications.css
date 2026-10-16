@@ -1,0 +1,53 @@
+.cert-boxes {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+.cert-box {
+  width: 100%;
+  border-radius: 1rem;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.cert-box.disabled {
+  opacity: 0.5;
+}
+.cert-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.cert-name {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+.cert-description {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+.cert-link {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  background-color: var(--opacity-second);
+  padding: 0.75rem;
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.cert-link.disabled {
+  background-color: #334155;
+  color: var(--text-muted);
+  cursor: not-allowed;
+}

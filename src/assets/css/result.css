@@ -2,7 +2,8 @@
 
 .result-box {
   width: 100%;
-  background-color: var(--second-color);
+  background-color: var(--bg-color);
+  border: 1px solid #334155;
   padding: 1.5rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
@@ -44,14 +45,17 @@
   text-decoration: none;
   width: 100%;
   text-align: center;
-  color: var(--text-color);
   background-color: var(--opacity-second);
+  color: var(--text-color);
   border-radius: 0.75rem;
   font-size: 0.8rem;
   padding: 1.25rem 1.5rem;
   cursor: pointer;
   outline: none;
   border: none;
+}
+.new-quiz:hover {
+  background-color: var(--opacity-second);
 }
 .check-answers-title {
   color: var(--dark-color);
@@ -70,10 +74,10 @@
   border-radius: 1rem;
 }
 .check-answer-box.correct {
-  border-left: 7px solid #3ac7a5;
+  border-left: 7px solid #2a474f;
 }
 .check-answer-box.wrong {
-  border-left: 7px solid #ff4747;
+  border-left: 7px solid #251b2c;
 }
 .check-answer-top {
   display: grid;
@@ -92,6 +96,7 @@
   color: var(--dark-color);
   font-size: 0.9rem;
   font-weight: 500;
+  white-space: pre-line;
 }
 .check-icon {
   width: 50px;
@@ -104,17 +109,17 @@
   background-color: rgba(133, 232, 209, 0.239);
 }
 .check-answer-box.wrong .check-icon {
-  background-color: #fef2f2;
+  background-color: #2a1717;
 }
 .check-icon i {
   font-size: 1.75rem;
   opacity: 1;
 }
 .check-answer-box.correct .check-icon i {
-  color: #3ac7a5;
+  color: #22c55e;
 }
 .check-answer-box.wrong .check-icon i {
-  color: #ff4747;
+  color: #ef4444;
 }
 .check-answer-bottom {
   display: grid;
@@ -126,27 +131,27 @@
   width: 100%;
   margin-top: 1rem;
   border-radius: 0.5rem;
-  background-color: #f3f4f7;
+  background-color: #1e293b;
   padding: 0.75rem 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
 .check-answer-box.correct .answer-box:nth-child(1) {
-  background-color: rgba(133, 232, 209, 0.239);
+  background-color: rgba(34, 197, 94, 0.10);
 }
 .check-answer-box.wrong .answer-box:nth-child(1) {
-  background-color: #fef2f2;
+  background-color: rgba(239, 68, 68, 0.10);
 }
 .answer-title {
   font-size: 0.7rem;
-  color: #949fae;
+  color: #94a3b8;
 }
 .check-answer-box.correct .answer-box:nth-child(1) .answer-title {
-  color: #3ac7a5;
+  color: #4ade80;
 }
 .check-answer-box.wrong .answer-box:nth-child(1) .answer-title {
-  color: #ff4747;
+  color: #f87171;
 }
 .answer-text {
   font-size: 0.8rem;

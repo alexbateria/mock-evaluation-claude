@@ -7,7 +7,6 @@ function Result() {
   const allQuestions = location.state.questions;
 
   let percentile = 0;
-
   allAnswers.forEach((item) => {
     if (item.trueAnswer) {
       percentile += 1;
@@ -65,11 +64,20 @@ function Result() {
                 <div className="answer-box">
                   <span className="answer-title">Correct Answer</span>
                   <span className="answer-text">
-                    {item.answers.map((ans) => {
-                      return ans.trueAnswer ? ans.answer : null;
-                    })}
+                    {item.answers
+                      .filter((ans) => ans.trueAnswer)
+                      .map((ans) => ans.answer)
+                      .join(", ")}
                   </span>
                 </div>
+              </div>
+              <div className="answer-box">
+                <span className="answer-title">Domain:</span>
+                <span className="answer-text">{allQuestions[key].domain}</span>
+              </div>
+              <div className="answer-box">
+                <span className="answer-title">Explanation Answer</span>
+                <span className="answer-text">{allQuestions[key].explanation}</span>
               </div>
             </div>
           );
