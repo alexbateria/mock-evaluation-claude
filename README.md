@@ -44,7 +44,7 @@ The app runs at http://localhost:3000.
     {
       id: 1,
       domain: "Output Evaluation and Validation",
-      time: 60,
+      time: 120,
       question: "...",
       answers: [
         { answer: "...", trueAnswer: true },
@@ -58,7 +58,7 @@ Multiple-response questions also include `type: "multiple"` and
 
 ## Adding question banks
 
-1. Create a new file, e.g. `examQuestionsBankA5.js`, exporting an array of
+1. Create some new files, e.g. `examQuestionsBankA1.js`, exporting an array of
    question objects.
 2. Import it in `QuizContext.js` and register it under the right
    certification in the `questions` object.
